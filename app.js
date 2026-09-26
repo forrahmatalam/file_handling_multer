@@ -9,10 +9,7 @@ config();
 const app =express();
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("main bich ka banda hu na yrr"); //This is actually middleware
-
-}, (req,res)=>{
+app.get("/", (req,res)=>{
     res.send("main get se aya hu")
 });
 
