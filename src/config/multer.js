@@ -8,4 +8,8 @@ const storage = multer.diskStorage({
 console.log("in file name"+file)
 cb(null,Date.now()+file.originalname)
     }
+});
+
+const upload = multer({
+    storage:storage
 })
